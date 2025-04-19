@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>keyfive5 | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans leading-normal tracking-normal">
+  <!-- Header -->
+  <header class="fixed w-full bg-gray-900 p-4 shadow">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">keyfive5</h1>
+      <nav>
+        <a href="#projects" class="mx-2 hover:text-teal-400">Projects</a>
+        <a href="#about"    class="mx-2 hover:text-teal-400">About</a>
+        <a href="#contact"  class="mx-2 hover:text-teal-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-24 pb-12 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-white">Muhammad Hasan Zafar</h2>
+      <p class="text-xl md:text-2xl text-gray-400 mb-6">Cybersecurity Engineer | Penetration Testing | Cloud & Infra</p>
+      <a href="https://github.com/keyfive5" target="_blank" class="inline-block bg-teal-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-teal-300">View GitHub</a>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="container mx-auto py-12">
+    <h3 class="text-3xl font-bold mb-6 text-white">Featured Projects</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Project Card -->
+      <div class="bg-gray-800 rounded-lg p-6 shadow hover:shadow-lg transition">
+        <h4 class="text-2xl font-semibold mb-2">HTB Dancing SMB Exploit</h4>
+        <p class="text-gray-400 mb-4">SMB misconfiguration exploit, flag retrieval, automation script.</p>
+        <a href="https://github.com/keyfive5/obsidiansignal-htb-dancing" target="_blank" class="text-teal-400 hover:underline">View Repo →</a>
+      </div>
+      <!-- Add more project cards here -->
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-gray-800 py-12">
+    <div class="container mx-auto md:flex md:items-center">
+      <div class="md:w-1/2 mb-6 md:mb-0">
+        <h3 class="text-3xl font-bold mb-4 text-white">About Me</h3>
+        <p class="text-gray-400 mb-4">I’m a Master’s candidate in Cybersecurity at University of Guelph, specializing in penetration testing, cloud infrastructure security, and digital forensics. My goal is to deliver high-value, paid engagements that secure modern enterprises.</p>
+        <ul class="list-disc list-inside text-gray-400">
+          <li>Penetration Testing & Bug Bounty</li>
+          <li>Cloud & Infrastructure Security</li>
+          <li>Digital Forensics & Incident Response</li>
+          <li>Privileged Access Management (CyberArk)</li>
+        </ul>
+      </div>
+      <div class="md:w-1/2 text-center">
+        <img src="https://github.com/keyfive5.png" alt="keyfive5 avatar" class="w-48 h-48 rounded-full mx-auto border-4 border-teal-400">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container mx-auto py-12">
+    <h3 class="text-3xl font-bold mb-6 text-white text-center">Get In Touch</h3>
+    <div class="max-w-xl mx-auto">
+      <form action="mailto:your.email@example.com" method="post" enctype="text/plain" class="bg-gray-800 rounded-lg p-6 shadow">
+        <label class="block mb-2">
+          <span class="text-gray-400">Name</span>
+          <input type="text" name="name" class="mt-1 w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded text-gray-100" />
+        </label>
+        <label class="block mb-2">
+          <span class="text-gray-400">Email</span>
+          <input type="email" name="email" class="mt-1 w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded text-gray-100" />
+        </label>
+        <label class="block mb-4">
+          <span class="text-gray-400">Message</span>
+          <textarea name="message" rows="4" class="mt-1 w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded text-gray-100"></textarea>
+        </label>
+        <button type="submit" class="w-full bg-teal-400 text-gray-900 px-4 py-2 rounded font-semibold hover:bg-teal-300">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 py-6 text-center text-gray-500">
+    © 2025 keyfive5. Built with Tailwind CSS.
+  </footer>
+</body>
+</html>
