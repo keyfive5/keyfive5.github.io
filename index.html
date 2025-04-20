@@ -42,10 +42,10 @@
     <!-- HTB Redeemer – Redis Misconfig Exploit -->
     <div class="bg-gray-800 rounded-lg p-6 shadow hover:shadow-lg transition">
       <h4 class="text-2xl font-semibold mb-2">HTB Redeemer – Redis Misconfig Exploit</h4>
-      <p class="text-gray-400 mb-4"><em>April 2025</em> Found an exposed Redis on port 6379, enumerated keys with <code>redis-cli</code>, and exfiltrated the flag. Automated the process with Bash.</p>
+      <p class="text-gray-400 mb-4"><em>April 2025</em> Found an exposed Redis on port 6379, enumerated keys with <code>redis-cli</code>, and exfiltrated the flag. Automated with Bash.</p>
       <ul class="list-disc list-inside text-gray-400 mb-4">
         <li><strong>Tools:</strong> nmap, redis-cli, Bash</li>
-        <li><strong>Key Command:</strong> <code>redis-cli -h 10.129.136.194 get flag</code></li>
+        <li><strong>Key Command:</strong> <code>redis-cli -h 10.129.136.194 get flag</code></li>
       </ul>
       <a href="https://github.com/keyfive5/obsidiansignal-htb-redeemer" target="_blank" class="text-teal-400 hover:underline">View Repo →</a><br/>
       <a href="https://dev.to/keyfive5/exploiting-htbs-redeemer-box-with-redis-misconfiguration-20dh" target="_blank" class="text-teal-400 hover:underline">Read Tutorial →</a>
@@ -62,8 +62,21 @@
       <a href="https://github.com/keyfive5/obsidiansignal-htb-appointment" target="_blank" class="text-teal-400 hover:underline">View Repo →</a><br/>
       <a href="https://dev.to/keyfive5/exploiting-htbs-appointment-box-with-sql-injection-430d" target="_blank" class="text-teal-400 hover:underline">Read Tutorial →</a>
     </div>
+
+    <!-- HTB Sequel – MariaDB Flag Extraction -->
+    <div class="bg-gray-800 rounded-lg p-6 shadow hover:shadow-lg transition">
+      <h4 class="text-2xl font-semibold mb-2">HTB Sequel – MariaDB Flag Extraction</h4>
+      <p class="text-gray-400 mb-4"><em>April 2025</em> Connected directly to MariaDB 10.3.27, bypassed TLS enforcement, enumerated the <code>htb</code> database, and retrieved the flag <strong>7b4bec00d1a39e3dd4e021ec3d915da8</strong>.</p>
+      <ul class="list-disc list-inside text-gray-400 mb-4">
+        <li><strong>Tools:</strong> nmap, mysql-client, Bash</li>
+        <li><strong>Key Command:</strong> <code>mysql --ssl -h 10.129.28.113 -u root --skip-ssl</code></li>
+      </ul>
+      <a href="https://github.com/keyfive5/obsidiansignal-htb-sequel" target="_blank" class="text-teal-400 hover:underline">View Repo →</a><br/>
+      <a href="https://dev.to/keyfive5/navigating-mariadb-on-htbs-sequel-box-to-retrieve-the-flag-32b7" target="_blank" class="text-teal-400 hover:underline">Read Tutorial →</a>
+    </div>
   </div>
 </section>
+
 
 
   <!-- About -->
